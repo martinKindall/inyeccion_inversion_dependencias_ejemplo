@@ -2,19 +2,19 @@ public class Gato {
 
     public int edad;
     public int pesoKg;
-    private Veterinario veterinario;
+    private Diagnosticador diagnosticador;
 
     public Gato(
-            Veterinario veterinario,
+            Diagnosticador diagnosticador,
             int edad,
             int pesoKg) {
         this.edad = edad;
         this.pesoKg = pesoKg;
-        this.veterinario = veterinario;
+        this.diagnosticador = diagnosticador;
     }
 
     public boolean esUnGatoSaludable() {
-        boolean diagnostico = veterinario.diagnosticar(this);
+        boolean diagnostico = diagnosticador.diagnosticar(this);
         return diagnostico;
     }
 }

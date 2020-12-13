@@ -1,6 +1,7 @@
-public class Veterinario {
+public class Veterinario implements Diagnosticador {
 
-    public static boolean diagnosticar(Gato gato) {
+    @Override
+    public boolean diagnosticar(Gato gato) {
         if (gato.edad > 15) {
             throw new IllegalArgumentException("Fuera de mi expertiz");
         }
