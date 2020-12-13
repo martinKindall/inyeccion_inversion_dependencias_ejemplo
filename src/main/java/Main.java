@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Gato miGato = new Gato(4, 8);
+        Gato miGato = new Gato(new Veterinario(), 4, 8);
 
         boolean estaSano = miGato.esUnGatoSaludable();
 
